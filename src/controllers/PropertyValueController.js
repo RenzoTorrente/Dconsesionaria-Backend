@@ -17,12 +17,24 @@ next(err);
     }
 //PROPERTIES CARS WITH VALUES FOR SCORE SCREEN
 exports.GetAllPropertiesCarWV = async (req, res, next)=>{
-let {categoryid} = req.params;
-const {vehicleId} = req.body;
+let {categoryid,vehicleId} = req.params;
+
 try{
-let properties = await Propertiescarwv(vehicleId, parseInt(categoryid));
-console.log(properties);
-res.status(200).json({properties});
+let properties = await Propertiescarwv(parseInt(vehicleId), parseInt(categoryid));
+var propsfilter = [];
+
+ properties.map(elem =>{
+var objfilt = {
+ id: elem.id,
+name:elem.name,
+value: elem.Vehicles[0].PropertyValue.value  
+  }
+propsfilter.push(objfilt);
+})
+
+res.status(200).json(propsfilter);
+
+
 }catch(err){
 next(err);
 }

@@ -9,7 +9,7 @@ return allproperties;
 }
 
 exports.propertiesmap = (array , data)=>{
-console.log( 'array : ', array);
+
 data.map((elem) => {
 let objprop = {
  id: elem.id,

@@ -8,7 +8,7 @@ const router = express.Router();
 //GET all PROPERTIES
 router.get('/alloptions/:vehicleid', GetAllPropertiesOptions);
 //GET PROPERTIES CAR BY CATEGORY WITH VALUES 
-router.get('/allforscore/:categoryid', GetAllPropertiesCarWV);
+router.get('/allforscore/:categoryid/:vehicleId', GetAllPropertiesCarWV);
 //UPDATE PROPERTY VALUE
 router.put('/car/:carid/property/:propertyid', UpdatePropertyValue);
 //Add Property Value

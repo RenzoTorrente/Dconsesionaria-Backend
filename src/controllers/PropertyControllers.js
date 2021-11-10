@@ -9,7 +9,6 @@ const {
 
 exports.CreateProperty = async (req, res, next) => {
   let { categoryid } = req.params;
-  console.log("id de category", categoryid);
   let { name } = req.body;
   try {
     await createprop(parseInt(categoryid), name);

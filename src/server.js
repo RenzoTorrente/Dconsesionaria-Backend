@@ -19,7 +19,6 @@ app.use(errors);
 app.listen(PORT, ()=>{
 console.log('server listening on port: ', PORT);
 sequelize.authenticate().then(async ()=>{
-console.log('db is connect')
 await sequelize.sync({ force: false });
 })
 })
