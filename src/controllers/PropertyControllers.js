@@ -26,7 +26,7 @@ exports.GetAllPropertiesOptions = async (req, res, next) => {
       let resproperties = propertiesFilter(options, optionnotin);
       res.status(200).json(resproperties);
     } else {
-      res.status(200).json({ optionnotin });
+      res.status(200).json( optionnotin );
     }
   } catch (err) {
     next(err);
