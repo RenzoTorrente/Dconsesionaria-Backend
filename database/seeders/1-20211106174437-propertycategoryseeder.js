@@ -12,7 +12,7 @@ module.exports = {
             updatedAt: new Date(),
           },
           {
-            name: "Ruedas, frenos y suspensión",
+            name: "Ruedas, frenos y  suspensión",
             icon: "https://img.icons8.com/carbon-copy/100/000000/wheels-chocked.png",
             createdAt: new Date(),
             updatedAt: new Date(),

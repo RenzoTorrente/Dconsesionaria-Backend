@@ -6,7 +6,7 @@ module.exports = {
         "VehicleProperties",
         [
           {
-            name: "Cedula verde,azul, titulo del automotor",
+            name: "Cedula verde,azul y titulo del automotor",
             categoryId: 1,
             createdAt: new Date(),
             updatedAt: new Date(),
