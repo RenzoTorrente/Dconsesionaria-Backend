@@ -36,7 +36,7 @@ module.exports = {
             updatedAt: new Date(),
           },
           {
-            name: "alumbrado",
+            name: "Alumbrado",
             icon: 'https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-light-cars-components-those-icons-fill-those-icons-1.png',
             createdAt: new Date(),
             updatedAt: new Date(),

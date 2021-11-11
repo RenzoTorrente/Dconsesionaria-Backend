@@ -1,5 +1,4 @@
-'use strict';
-
+"use strict";
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return Promise.all([
@@ -8,50 +7,50 @@ module.exports = {
         [
           {
             name: "Cedula verde,azul, titulo del automotor",
-            categoryId:1,
+            categoryId: 1,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Modelo identico de neumaticos",
-            categoryId:2,
+            categoryId: 2,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Estado aparente del motor",
-            categoryId:3,
+            categoryId: 3,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Estado del motor",
-            categoryId:4,
+            categoryId: 4,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Modelo de luces",
-            categoryId:5,
+            categoryId: 5,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Calidad de volante",
-            categoryId:6,
+            categoryId: 6,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
-         
+
           {
             name: "Estado de butacas",
-            categoryId:7,
+            categoryId: 7,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Escaneo computarizado",
-            categoryId:8,
+            categoryId: 8,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
@@ -63,7 +62,7 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     return Promise.all(
-      queryInterface.bulkDelete("VehicleProperties", null, {}),
-      );
-  }
+      queryInterface.bulkDelete("VehicleProperties", null, {})
+    );
+  },
 };
